@@ -104,7 +104,7 @@ export default function MonsterList(props: MonsterListProps) {
           return value.substring(0, 1).toUpperCase() + (value.length > 1 ? value.substring(1, value.length) : '');
         }).join(' ');
         return (
-          <Link href={`monsters/${monsterId}`} key={monsterId}
+          <Link href={`/monsters/${monsterId}`} key={monsterId}
                 onClick={() => {
                   sessionStorage.setItem('scroll-position', window.scrollY.toString());
                   sessionStorage.setItem('current-page', page.toString());
